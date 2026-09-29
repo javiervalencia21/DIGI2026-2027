@@ -25,7 +25,18 @@
         border: 2px red-solid;
         padding: 10px;
       }
-      
+      td,th
+      {
+        border: 1px solid black;
+      }
+      .pre
+      {
+        text-align: center;
+      }
+      #kil
+      {
+        text-align: center;
+      }
       
     </style>
   </head>
@@ -47,6 +58,35 @@
         <li><a href="http://localhost:63342/Ud1/Lista%20compra.html?_ijt=grerr50o2pe6mft5eqnobeg1if">Uso del elemento <b>"ul" y "li" e "ol" y "li"</b></li>
       </ul>
       </div>
-  
+  LISTA DE COMPRAS
+<table>
+    <thead>
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Naranjas</td>
+        <td class="pre">2</td>
+        <td class="pre">2kg</td>
+    </tr>
+    <tr>
+        <td>Peras</td>
+        <td class="pre">1,5</td>
+        <td class="pre">1kg</td>
+    </tr>
+    <tr>
+        <td>Platanos</td>
+        <td colspan="2">5kg 6€</td>
+    </tr>
+    <tr>
+        <td colspan="2">Total</td>
+
+        <td id="kil">8kg</td>
+    </tr>
+    </tbody>
+</table>
     </body>
 </html>
