@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 5px;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 16px 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 0;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0 0 16px 0;
+        }
+        header p {
+            font-size: 12px;
+            margin: 0;
+        }
+        header,
+        footer {
+            grid-column: 1 / -1;
+        }
+        p {
+            font-size: 15px;
+        }
+        .container > div:not(header):not(footer) {
+            background-color: #f4f4f4;
+            border: 1px solid #777;
+            border-radius: 16px;
+            padding: 15px;
+            height: 82px;
+            text-align: center;
+            box-sizing: content-box;
+        }
+
+        .container > div h3 {
+            font-size: 14px;
+            margin: 0 0 14px 0;
+        }
+
+        /* Listas de enlaces */
+
+        .container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container a {
+            color: blue;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+
+        /* Pie de página */
+
+        footer {
+            text-align: center;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        footer h3 {
+            font-size: 14px;
+            margin: 14px 0;
+        }
+
+        footer p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Recursos de Programación</h1>
+        <p>En esta página encontrarás enlaces y materiales de apoyo para aprender desarrollo web, diseño y bases de datos.</p>
+    </header>
+
+    <div>
+        <h3>HTML Básico</h3>
+        <ul>
+            <li><a href="#">Etiquetas fundamentales</a></li>
+            <li><a href="#">Estructura de una página web</a></li>
+            <li><a href="#">Enlaces e imágenes</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>CSS y Diseño Web</h3>
+        <ul>
+            <li><a href="#">Introducción a CSS</a></li>
+            <li><a href="#">Diseño con Grid</a></li>
+            <li><a href="#">Diseño Responsive</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Bases de Datos</h3>
+        <ul>
+            <li><a href="#">Introducción a SQL</a></li>
+            <li><a href="#">Consultas básicas</a></li>
+            <li><a href="#">Gestión de tablas</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <h3>Portal Educativo</h3>
+        <p>Material de aprendizaje y prácticas</p>
+    </footer>
+</div>
+</body>
+</html>
